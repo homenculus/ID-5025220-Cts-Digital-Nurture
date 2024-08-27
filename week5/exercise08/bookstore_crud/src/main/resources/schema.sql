@@ -1,0 +1,16 @@
+CREATE TABLE books (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(255) NOT NULL,
+    author VARCHAR(255) NOT NULL,
+    price DOUBLE NOT NULL,
+    isbn VARCHAR(20) NOT NULL,
+    version INT NOT NULL
+);
+
+CREATE TABLE customers (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    phone VARCHAR(15),
+    version INT NOT NULL
+);
